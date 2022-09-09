@@ -1,4 +1,4 @@
-public class Class Example
+public class ClassExample
 {
 
 }
