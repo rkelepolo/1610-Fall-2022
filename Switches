@@ -1,0 +1,32 @@
+using System;
+
+public class Program
+{
+    public GamesStates gameStates;
+
+    public void Main()
+    {   
+        gameStates = new GameStates();
+        gameStates.CheckState();
+    }
+} 
+
+public class GameStates {
+
+
+   pulbic enum States {
+        Starting,
+        Playing,
+        Ending
+    }
+
+    public States currentState = States.Starting;
+    
+    public void CheckState () {
+        swtich (currentState) {
+            case States.Starting:
+                Console.Writeline("Starting");
+                break;
+        }
+    }
+}
