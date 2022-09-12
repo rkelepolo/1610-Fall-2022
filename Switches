@@ -7,6 +7,7 @@ public class Program
     public void Main()
     {   
         gameStates = new GameStates();
+        gameStates.currentState = GameStates.States.Ending;
         gameStates.CheckState();
     }
 } 
@@ -27,6 +28,12 @@ public class GameStates {
             case States.Starting:
                 Console.Writeline("Starting");
                 break;
+            case States.Playing:
+                Console.Writeline("Playing");
+                break;
+            case States.Endin:
+                Console.Writeline("Endind");
+                break;  
         }
     }
 }
