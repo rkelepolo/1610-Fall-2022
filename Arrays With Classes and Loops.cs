@@ -4,7 +4,11 @@ public class Program{
     public static void Main()
     {
         weapon[] weaponsObjs = {new weapon(), new weapon()};
-        Console.Writeline(weaponsObjs[0].weaponsName);
+        weaponsObjs[1].weaponName = "sword";
+
+        foreach(var item in weaponsObjs){
+            Console.Writeline(item.weaponName);
+        }
     }
 }
 
